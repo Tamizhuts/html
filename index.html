@@ -3,163 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galaxy Battle - Home</title>
+    <title>Carrom World</title>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #0b0c10;
-            color: #c5c6c7;
-        }
-
-        header {
-            background: #1f2833;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            color: #66fcf1;
-            margin: 0;
-            font-size: 3em;
-        }
-
-        header p {
-            font-size: 1.2em;
-            color: #45a29e;
-        }
-
-        nav {
-            background: #45a29e;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #0b0c10;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .hero {
-            background: url('https://images.unsplash.com/photo-1612197606466-b6f2d3d3a473?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-shadow: 2px 2px #000;
-        }
-
-        .hero h2 {
-            font-size: 3em;
-            background: rgba(0,0,0,0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        main {
-            padding: 40px 20px;
-        }
-
-        section {
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            color: #66fcf1;
-        }
-
-        .game-features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .feature {
-            background: #1f2833;
-            padding: 20px;
-            flex: 1 1 250px;
-            border-radius: 10px;
-            border: 1px solid #66fcf1;
-        }
-
-        .feature h3 {
-            color: #45a29e;
-        }
-
-        footer {
-            background: #1f2833;
-            color: #c5c6c7;
-            text-align: center;
-            padding: 20px;
-        }
-
-        @media (max-width: 600px) {
-            .hero h2 {
-                font-size: 2em;
-                padding: 10px;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #2c3e50; color: white; }
+        header { background: #34495e; padding: 20px; text-align: center; }
+        nav { background: #2980b9; padding: 10px; display: flex; justify-content: center; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; }
+        nav a:hover { color: #f39c12; }
+        .content { padding: 30px; text-align: center; }
+        .game-card { display: inline-block; width: 250px; background: #34495e; margin: 10px; padding: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .game-card img { width: 100%; height: auto; border-radius: 8px; }
+        footer { background: #34495e; padding: 10px; text-align: center; position: fixed; width: 100%; bottom: 0; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Galaxy Battle</h1>
-        <p>The ultimate sci-fi space combat experience</p>
-    </header>
+<header>
+    <h1>Welcome to Carrom World!</h1>
+    <p>The ultimate destination for all Carrom enthusiasts</p>
+</header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#download">Download</a>
-    </nav>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Game Rules</a>
+    <a href="#">Play Now</a>
+    <a href="#">Community</a>
+</nav>
 
-    <div class="hero">
-        <h2>Join the Battle for the Galaxy</h2>
+<div class="content">
+    <h2>Popular Carrom Games</h2>
+    <div class="game-card">
+        <img src="https://via.placeholder.com/200" alt="Carrom Game 1">
+        <h3>Classic Carrom</h3>
+        <p>Play the traditional game of Carrom with friends and family.</p>
+        <a href="#">Play Now</a>
     </div>
+    <div class="game-card">
+        <img src="https://via.placeholder.com/200" alt="Carrom Game 2">
+        <h3>Multiplayer Mode</h3>
+        <p>Challenge players worldwide in this exciting mode!</p>
+        <a href="#">Play Now</a>
+    </div>
+    <div class="game-card">
+        <img src="https://via.placeholder.com/200" alt="Carrom Game 3">
+        <h3>Speed Carrom</h3>
+        <p>Fast-paced Carrom with limited time to win!</p>
+        <a href="#">Play Now</a>
+    </div>
+</div>
 
-    <main>
-        <section id="about">
-            <h2>About the Game</h2>
-            <p><strong>Galaxy Battle</strong> is an interstellar combat game where players fight for dominance in a war-torn universe. Join factions, customize your spaceship, and explore vast galaxies in this action-packed adventure.</p>
-        </section>
-
-        <section id="features">
-            <h2>Game Features</h2>
-            <div class="game-features">
-                <div class="feature">
-                    <h3>⚔ Multiplayer Battles</h3>
-                    <p>Join epic real-time battles with players around the world.</p>
-                </div>
-                <div class="feature">
-                    <h3>🛸 Ship Customization</h3>
-                    <p>Upgrade your spacecraft with weapons, shields, and more.</p>
-                </div>
-                <div class="feature">
-                    <h3>🌌 Open Galaxy</h3>
-                    <p>Explore hundreds of planets, space stations, and mysteries.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="download">
-            <h2>Download Now</h2>
-            <p>Available on Windows, macOS, and Linux. <br><br>
-            <a href="#" style="color: #66fcf1; font-weight: bold;">Click here to download</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Galaxy Battle Studios. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Carrom World. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
